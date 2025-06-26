@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".filterBookFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genre:"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/headingid"/>
+
+    <LinearLayout
+        android:id="@+id/checklayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingid"
+        android:orientation="horizontal"
+
+        >
+
+        <CheckBox
+            android:id="@+id/horror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Horror" />
+
+        <CheckBox
+            android:id="@+id/romantic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Romantic" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/samchecklayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checklayout"
+        android:orientation="horizontal"
+
+        >
+
+        <CheckBox
+            android:id="@+id/poetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+
+            android:layout_gravity="center"
+            android:text="Poetry" />
+
+        <CheckBox
+            android:id="@+id/psychology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Psychology"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/samchecklayout"
+        android:gravity="center"
+        android:id="@+id/filterbtn"
+        android:onClick="filtermethod"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:text="Filter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filterbtn"
+        android:background="@color/skin"
+
+         />
+
+
+
+
+</RelativeLayout>

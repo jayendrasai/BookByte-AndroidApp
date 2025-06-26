@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp"
+    android:padding="160dp"
+    >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FCFEFF"
+    tools:context=".BookDetailFragment">
+
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:id="@+id/booknamelayout"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+
+        />
+
+<TextView
+    android:id="@+id/BookName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BookName"
+    android:textSize="20sp"
+    android:fontFamily="sans-serif-condensed-medium"
+    />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/booknamelayout"
+android:id="@+id/Authornamelayout"
+android:orientation="horizontal"
+
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Author:"
+    android:fontFamily="sans-serif-light"
+    android:textSize="15sp" />
+
+<TextView
+    android:id="@+id/AuthorName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Author Name"
+    android:textSize="20sp"
+    android:fontFamily="sans-serif-condensed"
+    />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/Genrenamelayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Authornamelayout"
+
+android:orientation="horizontal">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Genre:"
+    android:fontFamily="sans-serif-light"
+    android:textSize="15sp" />
+
+<TextView
+    android:id="@+id/genreid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Genre Name"
+    android:textSize="20sp"
+    android:fontFamily="sans-serif-condensed"
+    />
+</LinearLayout>
+<LinearLayout
+android:id="@+id/yearlayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/Genrenamelayout"
+android:orientation="horizontal"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Year:"
+    android:textSize="15sp"
+    android:fontFamily="sans-serif-light" />
+
+<TextView
+    android:id="@+id/year"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Year Name"
+    android:textSize="20sp"
+    android:fontFamily="sans-serif-condensed"
+    />
+</LinearLayout>
+
+<!--    <View-->
+<!--        android:id="@+id/borderline"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_below="@+id/yearlayout"-->
+<!--        android:background="@color/blue" />-->
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

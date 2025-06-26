@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeScreenFragment2"
+            app:destination="@id/homeScreenFragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_createAccount"
+            app:destination="@id/createAccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreenFragment2"
+        android:name="com.example.myapp.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_filterBookFragment"
+            app:destination="@id/filterBookFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_addBookFragment"
+            app:destination="@id/addBookFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_createAccount"
+            app:destination="@id/createAccount" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_accountDetailFragment"
+            app:destination="@id/accountDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.example.myapp.BookDetailFragment"
+        android:label="fragment_book_detail"
+        tools:layout="@layout/fragment_book_detail" >
+        <action
+            android:id="@+id/action_bookDetailFragment_to_homeScreenFragment2"
+            app:destination="@id/homeScreenFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccount"
+        android:name="com.example.myapp.CreateAccount"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccount_to_homeScreenFragment2"
+            app:destination="@id/homeScreenFragment2" />
+        <action
+            android:id="@+id/action_createAccount_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/filterBookFragment"-->
+<!--        android:name="com.example.myapp.filterBookFragment"-->
+<!--        android:label="filterBookFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_filterBookFragment_to_bookDetailFragment"-->
+<!--            app:destination="@id/bookDetailFragment" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/filterBookFragment"
+        android:name="com.example.myapp.filterBookFragment"
+        android:label="filterBookFragment">
+        <action
+            android:id="@+id/action_filterBookFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.myapp.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.example.myapp.AddBookFragment"
+        android:label="fragment_add_book"
+        tools:layout="@layout/fragment_add_book" >
+        <action
+            android:id="@+id/action_addBookFragment_to_homeScreenFragment2"
+            app:destination="@id/homeScreenFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountDetailFragment"
+        android:name="com.example.myapp.AccountDetailFragment"
+        android:label="fragment_account_detail"
+        tools:layout="@layout/fragment_account_detail" >
+        <action
+            android:id="@+id/action_accountDetailFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
